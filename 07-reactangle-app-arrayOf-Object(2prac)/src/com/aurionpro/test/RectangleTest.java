@@ -6,17 +6,18 @@ import com.aurionpro.model.ColourType;
 import com.aurionpro.model.Rectangle;
 
 public class RectangleTest {
-	public static void main(String[] args){
-		
-	  Rectangle[] rectangle = new Rectangle[5];
-	  
-	  for(int i=0;i<rectangle.length;i++) {
-		  rectangle[i]= new Rectangle();
-		  getUserInputForHeightandWidth(rectangle[i]);
-		  printAreaAndPerimeter(rectangle[i]);
-	  }
-	  System.out.println(rectangle[i]);
+	public static void main(String[] args) {
+
+		Rectangle[] rectangle = new Rectangle[5];
+
+		for (int i = 0; i < rectangle.length; i++) {
+			rectangle[i] = new Rectangle();
+			getUserInputForHeightandWidth(rectangle[i]);
+			printAreaAndPerimeter(rectangle[i]);
+		}
+		System.out.println(rectangle[i]);
 	}
+
 	private static void getUserInputForHeightandWidth(Rectangle rectangle) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter the height and width of the recatngle");

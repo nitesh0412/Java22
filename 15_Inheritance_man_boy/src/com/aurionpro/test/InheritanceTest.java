@@ -18,7 +18,8 @@ public class InheritanceTest {
 //		boy.eat();
 //		boy.play();
 //		boy.read();
-//		
+//	}
+		
 //		System.out.println("-------------------");
 //
 //		Kid kid = new Kid();
@@ -26,43 +27,44 @@ public class InheritanceTest {
 //		kid.read();
 //		
 //		System.out.println("-------------------");
+
+		Man man2 = new Boy();
+		man2.play();
+		man2.read();
+		man2.eat(); //obj of child but the refrence of parent thats why only parent prop will inherit 
+		
+	}
+//		case4();
+//		case5();
+//		case6();
+//	}
+//	
+//	private static void case4()
+//	{
+//		playAtPark(new Man());
+//		playAtPark(new Boy());
+//		playAtPark(new Kid());
+//		playAtPark(new Infant());
 //
-//		Man man2 = new Boy();
-//		man2.play();
-//		man2.read();
-	//	man2.eat(); obj of child but the refrence of parent thats why only parent prop will inherit 
-		
-		case4();
-		case5();
-		case6();
-	}
-	
-	private static void case4()
-	{
-		playAtPark(new Man());
-		playAtPark(new Boy());
-		playAtPark(new Kid());
-		playAtPark(new Infant());
-
-	}
-	
-	private static void playAtPark(Man man) {
-		man.play();
-		
-	}
-	
-	private static void case5()
-	{
-		Object obj ;
-		
-		obj =10;
-		System.out.println(obj.getClass());
-	}
-
-		private static void case6()
-		{
-			typeCast(new Infant());
-		}
+//	}
+//	
+//	private static void playAtPark(Man man) {
+//		man.play();
+//		
+//	}
+//	
+//	private static void case5()
+//	{
+//		Object obj ;
+//		
+//		obj =10;
+//		System.out.println(obj.getClass());
+//	}
+//
+//		private static void case6()
+//		{
+//			typeCast(new Infant());
+//		}
 	
 //	private static void typeCast(Man man )
 //	{
@@ -73,13 +75,13 @@ public class InheritanceTest {
 //		}
 //	}
 		
-		
-		private static void typeCast(Object obj )
-		{
-			if(obj instanceof Infant)
-			{
-				Infant infant = (Infant)obj;
-				infant.sleep();
-			}
-		}
+//		
+//		private static void typeCast(Object obj )
+//		{
+//			if(obj instanceof Infant)
+//			{
+//				Infant infant = (Infant)obj;
+//				infant.sleep();
+//			}
+//		}
 }
